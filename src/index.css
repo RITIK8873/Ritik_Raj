@@ -16,20 +16,15 @@ code {
 
 /* Reusable classes */
 .flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @apply flex justify-center items-center;
 }
 
 .flex-center-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply flex flex-col justify-center items-center;
 }
 
 .flex-display {
-  display: flex;
+  @apply flex;
 }
 
 /* Animations */
@@ -45,264 +40,188 @@ code {
 }
 
 .name {
+  @apply text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-10xl;
   animation: fade-in 1.5s;
-  font-size: 150px;
   color: #242629;
   text-shadow: 3px 5px 0 rgb(104, 255, 104), 2px -3px 0 green, -3px 4px 0 green, 1px 2px 0 green;
 }
 
 /* Navbar */
 .nav-container {
-  @apply flex-display;
-  background-color: #242629;
-  color: #fffdfd;
-  align-items: center;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  @apply flex bg-gray-900 text-white items-center p-2 sticky top-0 z-50;
 }
 
 .logo {
-  @apply flex-display;
-  width: 30%;
-  justify-content: space-around;
-  align-items: center;
+  @apply flex w-1/3 justify-around items-center;
 }
 
 .brand {
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
+  @apply text-lg font-bold no-underline text-white;
 }
 
 .social-icons {
-  @apply flex-display;
-  gap: 20px;
+  @apply flex gap-4;
 }
 
 .social-name {
-  font-size: 14px;
+  @apply text-sm;
 }
 
 .navbar-container {
-  @apply flex-display;
-  flex-grow: 1;
-  justify-content: flex-end;
+  @apply flex flex-grow justify-end;
 }
 
 .navbar {
-  margin-right: 20px;
+  @apply mr-4;
 }
 
 ul {
-  @apply flex-display;
-  list-style-type: none;
-  padding: 0;
+  @apply flex list-none p-0;
 }
 
 li {
-  margin-right: 20px;
+  @apply mr-4;
 }
 
 .nav-a {
-  font-size: 17px;
+  @apply text-base;
 }
 
 li a {
-  color: #ffffff;
-  text-decoration: none;
+  @apply text-white no-underline;
 }
 
 li a:hover {
-  color: rgb(255, 187, 187);
+  @apply text-red-300;
 }
 
 /* Home */
 .home-header {
-  background-color: #242629;
+  @apply bg-gray-900;
 }
 
 .empty-place {
-  height: 70px;
+  @apply h-16;
 }
 
 .circle {
-  @apply flex-center;
+  @apply flex justify-center;
 }
 
 .image img {
-  border: 2px solid white;
-  height: 270px;
-  width: 270px;
-  border-radius: 50%;
+  @apply border-2 border-white h-64 w-64 rounded-full;
 }
 
 .home-name {
-  @apply flex-center-column;
+  @apply flex flex-col justify-center items-center;
 }
 
 .home-content {
-  @apply flex-center-column;
+  @apply flex flex-col justify-center items-center;
 }
 
 .home-content-intro {
-  width: 65%;
-  color: white;
-  font-size: 18px;
+  @apply w-4/5 md:w-3/5 text-white text-lg;
 }
 
 .background__wave {
-  background-position-y: top;
-  background-repeat-y: no-repeat;
-  background-repeat: repeat-x;
-  background-size: contain;
+  @apply bg-cover bg-no-repeat bg-top;
   background-image: url(../src/assets/wave_bg.png);
 }
 
 .headings {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
-  font-size: 4em;
-  text-align: center;
+  @apply font-sans font-light text-4xl text-center;
 }
 
 .container-fluid {
-  @apply flex-center-column;
-  background-color: rgb(255, 245, 245);
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  @apply flex flex-col justify-center items-center bg-red-100 px-4 mx-auto;
 }
 
 .experience-container {
-  @apply flex-center;
-  margin-top: 20px;
-  padding: 5px;
-  height: 500px;
-  border-radius: 9px;
-  width: 90%;
-  background-color: white;
+  @apply flex justify-center mt-5 p-2 h-80 rounded-lg w-11/12 bg-white;
 }
 
 .card, .card-img {
-  height: 480px;
+  @apply h-full;
 }
 
 .card-img {
-  width: 20%;
+  @apply w-1/5;
 }
 
 .card {
-  width: 70%;
+  @apply w-4/5;
 }
 
 .card-head {
-  font-size: 30px;
-  font-weight: 900;
-  text-align: center;
+  @apply text-2xl font-black text-center;
 }
 
 .card-description {
-  margin: 7px;
+  @apply my-2;
 }
 
 .card-job-name {
-  background-color: grey;
-  border-radius: 9px;
+  @apply bg-gray-400 rounded-lg;
 }
 
 /* About */
 .about-container {
-  @apply flex-center-column;
-  min-height: 100vh;
-  background-color: #f0f0f0;
+  @apply flex flex-col justify-center items-center min-h-screen bg-gray-100;
 }
 
 .about-content {
-  max-width: 800px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  @apply max-w-2xl p-5 bg-white rounded-lg shadow-md;
 }
 
 .about-content h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  @apply text-2xl mb-2;
 }
 
 .about-content p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+  @apply leading-relaxed mb-3;
 }
 
 /* Projects */
 .projects-container::before {
-  visibility: visible;
+  @apply fixed top-0 left-0 w-full h-full bg-cover bg-center;
+  background-image: url('./assets/bg2.jpg');
   z-index: -100;
-  position: fixed;
-  top: -600.238px;
-  left: 0;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  height: 1321px;
-  width: 1519px;
-  content: "";
-  background: url('./assets/bg2.jpg') no-repeat center center;
-  background-size: cover;
 }
-.projects-container{
-  margin-top: 15px;
-  margin-bottom: 15px;
+
+.projects-container {
+  @apply my-4;
 }
+
 .projects-container h1 {
-  color: white;
-  font-size: 35px;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  @apply text-white text-2xl md:text-3xl text-center my-5;
 }
 
 .proj {
-  @apply flex-center;
-  flex-wrap: wrap;
-  flex-direction: row;
+  @apply flex flex-wrap justify-center;
 }
 
 .project-box {
-  @apply flex-center-column;
-  margin: 15px;
-  height: 400px;
-  width: 40%;
-  border-radius: 9px;
+  @apply flex flex-col justify-center items-center my-4 h-96 w-full md:w-1/2 lg:w-2/5 rounded-lg;
 }
 
-.box-item-img, img {
-  height: 180px;
-  width: 70%;
+.box-item-img img {
+  @apply h-44 w-3/5;
 }
 
 .box-item-description {
-  /* height: 180px; */
-  width: 90%;
+  @apply w-4/5;
 }
 
 .box-item-description p {
-  color: white;
-  font-weight: bold;
+  @apply text-white font-bold;
 }
 
 /* Footer */
 .footer {
-  background-color: black;
-  height: 40px;
+  @apply bg-black h-10;
 }
 
 .footer p {
-  text-align: center;
-  color: white;
-  margin-bottom: 25px;
+  @apply text-center text-white mb-6;
 }
