@@ -41,7 +41,7 @@ export default function Home() {
       <div className='home-container'>
 
         <div className="home-header">
-          <div className="empty-place"></div>
+          
           <div className="circle">
             <div className="image">
               <img src={Myimage} alt="loading" />
@@ -139,8 +139,8 @@ export default function Home() {
                 <img src={Myimage} alt="project_image" />
               </div>
               <div className="box-item-description">
-                <h1>TODOS LIST</h1>
-                <p>Create a simple todos list, and applied my skills </p>
+                <h1>Social Medial Platform</h1>
+                <p>Social media platform similar to other platform but offering a simpler </p>
                 <p>link will be available soon ! </p>
               </div>
             </div>
@@ -164,7 +164,7 @@ export default function Home() {
         
 
         
-      <footer className='footer'></footer>
+      
       </div>
     </>
   );
