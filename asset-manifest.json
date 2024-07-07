@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Ritik_Raj/static/css/main.e43863b9.css",
-    "main.js": "/Ritik_Raj/static/js/main.8206eefd.js",
+    "main.css": "/Ritik_Raj/static/css/main.89e8c85c.css",
+    "main.js": "/Ritik_Raj/static/js/main.b510ebba.js",
     "static/js/453.8ab44547.chunk.js": "/Ritik_Raj/static/js/453.8ab44547.chunk.js",
     "static/media/myimage.jpg": "/Ritik_Raj/static/media/myimage.fdb27db968c09b6f8d84.jpg",
     "static/media/bg2.jpg": "/Ritik_Raj/static/media/bg2.9262fc182672fbbf66cb.jpg",
     "static/media/wave_bg.png": "/Ritik_Raj/static/media/wave_bg.0d9c102d0cd834101f08.png",
     "index.html": "/Ritik_Raj/index.html",
-    "main.e43863b9.css.map": "/Ritik_Raj/static/css/main.e43863b9.css.map",
-    "main.8206eefd.js.map": "/Ritik_Raj/static/js/main.8206eefd.js.map",
+    "main.89e8c85c.css.map": "/Ritik_Raj/static/css/main.89e8c85c.css.map",
+    "main.b510ebba.js.map": "/Ritik_Raj/static/js/main.b510ebba.js.map",
     "453.8ab44547.chunk.js.map": "/Ritik_Raj/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e43863b9.css",
-    "static/js/main.8206eefd.js"
+    "static/css/main.89e8c85c.css",
+    "static/js/main.b510ebba.js"
   ]
 }
