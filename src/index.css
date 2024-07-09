@@ -1,6 +1,8 @@
-/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* Reset and basic styling */
+/* Custom styles */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
@@ -13,7 +15,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* Reusable classes */
+/* Reusable classes (if necessary, use Tailwind's utility classes instead) */
 .flex-center {
   display: flex;
   justify-content: center;
@@ -31,7 +33,7 @@ code {
   display: flex;
 }
 
-/* Animations */
+/* Animations (use Tailwind's animation utilities if needed) */
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -43,156 +45,151 @@ code {
   }
 }
 
-/* Name styling */
 .name {
-  font-size: 6rem; /* Adjust size as needed */
   animation: fade-in 1.5s;
+  font-size: 150px;
   color: #242629;
   text-shadow: 3px 5px 0 rgb(104, 255, 104), 2px -3px 0 green, -3px 4px 0 green, 1px 2px 0 green;
 }
 
-/* Navbar */
+/* Navbar (use Tailwind's utility classes for layout and styling) */
 .nav-container {
-  display: flex;
-  background-color: #333;
-  color: white;
+  @apply flex-display; /* This would be replaced with Tailwind's classes */
+  background-color: #242629;
+  color: #fffdfd;
   align-items: center;
-  padding: 0.5rem;
+  padding: 10px;
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 1000;
 }
 
 .logo {
-  display: flex;
-  width: 33.33%;
+  @apply flex-display; /* Replace with Tailwind's classes */
+  width: 30%;
   justify-content: space-around;
   align-items: center;
 }
 
 .brand {
-  font-size: 1.125rem; /* Adjust size as needed */
+  font-size: 20px;
   font-weight: bold;
-  color: white;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .social-icons {
-  display: flex;
-  gap: 1rem;
+  @apply flex-display; /* Replace with Tailwind's classes */
+  gap: 20px;
 }
 
 .social-name {
-  font-size: 0.875rem; /* Adjust size as needed */
+  font-size: 14px;
 }
 
 .navbar-container {
-  display: flex;
+  @apply flex-display; /* Replace with Tailwind's classes */
   flex-grow: 1;
   justify-content: flex-end;
 }
 
 .navbar {
-  margin-right: 1rem;
+  margin-right: 20px;
 }
 
 ul {
-  display: flex;
-  list-style: none;
+  @apply flex-display; /* Replace with Tailwind's classes */
+  list-style-type: none;
   padding: 0;
 }
 
 li {
-  margin-right: 1rem;
+  margin-right: 20px;
 }
 
 .nav-a {
-  font-size: 1rem; /* Adjust size as needed */
+  font-size: 17px;
 }
 
 li a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
 }
 
 li a:hover {
-  color: #f00; /* Adjust color as needed */
+  color: rgb(255, 187, 187);
 }
 
-/* Home */
+/* Home (use Tailwind's utility classes for layout and styling) */
 .home-header {
-  background-color: #333;
+  background-color: #242629;
+}
+
+.empty-place {
+  height: 70px;
 }
 
 .circle {
-  display: flex;
-  justify-content: center;
+  @apply flex-center; /* Replace with Tailwind's classes */
 }
 
 .image img {
   border: 2px solid white;
-  height: 16rem; /* Adjust size as needed */
-  width: 16rem; /* Adjust size as needed */
+  height: 287px;
+  width: 270px;
   border-radius: 50%;
 }
 
 .home-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply flex-center-column; /* Replace with Tailwind's classes */
 }
 
 .home-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply flex-center-column; /* Replace with Tailwind's classes */
 }
 
 .home-content-intro {
-  width: 80%; 
-  font-size: 1.125rem; 
+  width: 65%;
   color: white;
+  font-size: 18px;
 }
 
 .background__wave {
-  background-image: url('../src/assets/wave_bg.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
+  background-position-y: top;
+  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-image: url(../src/assets/wave_bg.png);
 }
 
 .headings {
-  font-family: sans-serif;
-  font-weight: lighter;
-  font-size: 2rem; /* Adjust size as needed */
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 4em;
   text-align: center;
 }
 
 .container-fluid {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(225, 225, 225); 
-  padding: 1rem;
-  margin: auto;
+  @apply flex-center-column; /* Replace with Tailwind's classes */
+  background-color: rgb(255, 245, 245);
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .experience-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.625rem; /* Adjust margin as needed */
-  padding: 0.5rem;
-  height: 20rem; /* Adjust height as needed */
-  border-radius: 0.625rem; /* Adjust border radius as needed */
-  width: 91.66%; /* Adjust width as needed */
+  @apply flex-center; /* Replace with Tailwind's classes */
+  margin-top: 20px;
+  padding: 5px;
+  height: 500px;
+  border-radius: 9px;
+  width: 90%;
   background-color: white;
 }
 
-.card,
-.card-img {
-  height: 100%;
+.card, .card-img {
+  height: 480px;
 }
 
 .card-img {
@@ -200,116 +197,115 @@ li a:hover {
 }
 
 .card {
-  width: 80%;
+  width: 70%;
 }
 
 .card-head {
-  font-size: 2rem; /* Adjust size as needed */
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 900;
   text-align: center;
 }
 
 .card-description {
-  margin-top: 0.5rem;
+  margin: 7px;
 }
 
 .card-job-name {
-  background-color: #ccc;
-  border-radius: 0.625rem; /* Adjust border radius as needed */
+  background-color: grey;
+  border-radius: 9px;
 }
 
-/* About */
+/* About (use Tailwind's utility classes for layout and styling) */
 .about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @apply flex-center-column; /* Replace with Tailwind's classes */
   min-height: 100vh;
   background-color: #f0f0f0;
 }
 
 .about-content {
-  max-width: 32rem; /* Adjust max-width as needed */
-  padding: 1.25rem;
-  background-color: white;
-  border-radius: 0.625rem; /* Adjust border radius as needed */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-content h1 {
-  font-size: 2rem; /* Adjust size as needed */
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 .about-content p {
-  line-height: 1.5;
-  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
 
-/* Projects */
+/* Projects (use Tailwind's utility classes for layout and styling) */
 .projects-container::before {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../src/assets/bg2.jpg');
-  background-size: cover;
-  background-position: center;
+  visibility: visible;
   z-index: -100;
+  position: fixed;
+  top: -600.238px;
+  left: 0;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  height: 1321px;
+  width: 1519px;
+  content: "";
+  background: url('./assets/bg2.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .projects-container {
-  margin-top: 1rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .projects-container h1 {
-  font-size: 1.5rem; /* Adjust size as needed */
   color: white;
+  font-size: 35px;
   text-align: center;
-  margin-top: 1.25rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .proj {
-  display: flex;
+  @apply flex-center; /* Replace with Tailwind's classes */
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .project-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-  height: 24rem; /* Adjust height as needed */
-  width: 100%; /* Adjust width as needed */
-  max-width: 40%; /* Adjust max-width as needed */
-  border-radius: 0.625rem; /* Adjust border radius as needed */
+  @apply flex-center-column; /* Replace with Tailwind's classes */
+  margin: 15px;
+  width: 40%;
+  border-radius: 9px;
 }
 
-.box-item-img img {
-  height: 11rem; /* Adjust height as needed */
-  width: 60%; /* Adjust width as needed */
+.box-item-img,
+img {
+  height: 180px;
+  width: 70%;
 }
 
 .box-item-description {
-  width: 80%; /* Adjust width as needed */
+  /* height: 180px; */
+  width: 90%;
 }
 
 .box-item-description p {
-  font-weight: bold;
   color: white;
+  font-weight: bold;
 }
 
-/* Footer */
+/* Footer (use Tailwind's utility classes for layout and styling) */
 .footer {
   background-color: black;
-  height: 2.5rem; /* Adjust height as needed */
+  height: 40px;
 }
 
 .footer p {
   text-align: center;
   color: white;
-  margin-bottom: 0.375rem;
+  margin-bottom: 25px;
 }
