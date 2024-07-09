@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Ritik_Raj/static/css/main.89e8c85c.css",
-    "main.js": "/Ritik_Raj/static/js/main.b510ebba.js",
+    "main.css": "/Ritik_Raj/static/css/main.5261bae2.css",
+    "main.js": "/Ritik_Raj/static/js/main.676b4b8b.js",
     "static/js/453.8ab44547.chunk.js": "/Ritik_Raj/static/js/453.8ab44547.chunk.js",
-    "static/media/myimage.jpg": "/Ritik_Raj/static/media/myimage.fdb27db968c09b6f8d84.jpg",
+    "static/media/News2You.png": "/Ritik_Raj/static/media/News2You.a302fec9b4313c18dfbe.png",
+    "static/media/myimage.jpg": "/Ritik_Raj/static/media/myimage.8dbb167850f1a5ef5f12.jpg",
     "static/media/bg2.jpg": "/Ritik_Raj/static/media/bg2.9262fc182672fbbf66cb.jpg",
     "static/media/wave_bg.png": "/Ritik_Raj/static/media/wave_bg.0d9c102d0cd834101f08.png",
     "index.html": "/Ritik_Raj/index.html",
-    "main.89e8c85c.css.map": "/Ritik_Raj/static/css/main.89e8c85c.css.map",
-    "main.b510ebba.js.map": "/Ritik_Raj/static/js/main.b510ebba.js.map",
+    "main.5261bae2.css.map": "/Ritik_Raj/static/css/main.5261bae2.css.map",
+    "main.676b4b8b.js.map": "/Ritik_Raj/static/js/main.676b4b8b.js.map",
     "453.8ab44547.chunk.js.map": "/Ritik_Raj/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89e8c85c.css",
-    "static/js/main.b510ebba.js"
+    "static/css/main.5261bae2.css",
+    "static/js/main.676b4b8b.js"
   ]
 }
